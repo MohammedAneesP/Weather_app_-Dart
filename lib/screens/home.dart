@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
+import 'package:weather_api/apiKey.dart';
 import 'package:weather_api/constants.dart';
 import 'dart:convert';
 import 'package:weather_api/weather_models.dart';
@@ -31,7 +32,7 @@ class _HomePageState extends State<HomePage> {
     final uriParse = Uri.https('weatherapi-com.p.rapidapi.com', '/current.json',
         {"q": "$city,$country"});
     final weathrREspo = await http.get(uriParse, headers: {
-      "X-RapidAPI-Key": "200c82b907msh24597d44ca3e98dp1449abjsn7155f67276f3",
+      "X-RapidAPI-Key": "$keyApi",
       "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
       "useQueryString": 'true'
     });
