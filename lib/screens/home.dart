@@ -218,7 +218,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 sizedHght20,
                 Container(
-                  height: kheight * .46,
+                  height: kheight * .47,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius: borderRadius2,
