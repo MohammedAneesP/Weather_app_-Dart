@@ -236,7 +236,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   child: Column(
                     children: [
-                      Container(
+                      SizedBox(
                         height: kheight * 0.33,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -279,7 +279,8 @@ class _HomePageState extends State<HomePage> {
                                       color: weatherApiJson?.current.isDay == 1
                                           ? kblack
                                           : kWhite,
-                                      fontSize: 20),
+                                      fontSize: 18),
+                                      overflow: TextOverflow.ellipsis,
                                 ),
                                 sizedWdth,
                                 const DividerContainer(),
@@ -290,7 +291,8 @@ class _HomePageState extends State<HomePage> {
                                       color: weatherApiJson?.current.isDay == 1
                                           ? kblack
                                           : kWhite,
-                                      fontSize: 20),
+                                      fontSize: 15,),
+                                      overflow: TextOverflow.ellipsis,
                                 ),
                                 sizedWdth,
                                 const DividerContainer(),
@@ -306,7 +308,7 @@ class _HomePageState extends State<HomePage> {
                                       color: weatherApiJson?.current.isDay == 1
                                           ? kblack
                                           : kWhite,
-                                      fontSize: 20),
+                                      fontSize: 15),
                                 ),
                               ],
                             ),
